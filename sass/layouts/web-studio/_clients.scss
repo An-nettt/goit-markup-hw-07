@@ -1,0 +1,42 @@
+/* ------------------------Постійні клієнти----------------------------- */
+.clients-list {
+    display: flex;
+    justify-content: center;
+}
+
+.clients-item {
+    flex-basis: calc((100% - 150px) / 6);
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-link {
+    transition: border var(--transition);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 15px 31px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.clients-logo {
+    transition: fill var(--transition);
+
+    fill: currentColor;
+}
+
+.clients-link:hover .clients-logo,
+.clients-link:focus .clients-logo {
+    fill: var(--accent-color);
+}

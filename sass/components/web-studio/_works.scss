@@ -7,18 +7,18 @@
     display: flex;
 }
 
-.work-list .item {
+.work-list__item {
     flex-basis: calc((100% - 60px) / 3);
     &:not(:last-child) {
         margin-right: 30px;
     }
 }
 
-.work {
+.work-list__work {
     position: relative;
 }
 
-.work-text {
+.work-list__text {
     position: absolute;
     bottom: 0;
     left: 0;

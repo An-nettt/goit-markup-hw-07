@@ -4,17 +4,14 @@
     justify-content: center;
 }
 
-.clients-item {
+.clients-list__item {
     flex-basis: calc((100% - 150px) / 6);
     &:not(:last-child) {
         margin-right: 30px;
     }
-
 }
 
-
-
-.clients-link {
+.clients-list__link {
     transition: border var(--transition);
 
     display: flex;
@@ -31,14 +28,12 @@
     }
 }
 
-
-
-.clients-logo {
+.clients-list__logo {
     transition: fill var(--transition);
 
     fill: currentColor;
-    .clients-link:hover &,
-    .clients-link:focus & {
+    .clients-list__link:hover &,
+    .clients-list__:focus & {
         fill: var(--accent-color);
     }
 }

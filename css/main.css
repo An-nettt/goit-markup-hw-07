@@ -199,9 +199,7 @@ img {
   -webkit-transition: fill var(--transition);
   transition: fill var(--transition);
 }
-
-.button-close:hover .button-icon,
-.button-close:focus .button-icon {
+.button-close:hover .button-close .button-icon, .button-close:focus .button-close .button-icon {
   fill: var(--accent-color);
 }
 
@@ -217,11 +215,9 @@ img {
 .modal-field {
   margin-bottom: 10px;
 }
-
 .modal-field:nth-of-type(4n) {
   margin-bottom: 20px;
 }
-
 .modal-field:nth-of-type(5n) {
   margin-bottom: 30px;
 }
@@ -250,16 +246,15 @@ img {
   border-radius: 4px;
   outline: transparent;
 }
+.form-input:focus {
+  border-color: var(--accent-color);
+}
 
 .form-input .placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-}
-
-.form-input:focus {
-  border-color: var(--accent-color);
 }
 
 .form-icon {
@@ -288,44 +283,38 @@ img {
   border-radius: 4px;
   outline: transparent;
 }
-
+.form-comment:focus {
+  border-color: var(--accent-color);
+}
 .form-comment::-webkit-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-comment::-moz-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-comment:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-comment::-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-comment::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-}
-
-.form-comment:focus {
-  border-color: var(--accent-color);
 }
 
 .policy-label {
@@ -360,13 +349,11 @@ img {
   border-radius: 2px;
   fill: transparent;
 }
-
 .policy-check:checked + .policy-label .policy-check {
   background-color: var(--accent-color);
   border: none;
   fill: var(--prymary-bgc);
 }
-
 .policy-check:focus + .policy-label .policy-check {
   border-color: var(--accent-color);
 }
@@ -388,9 +375,7 @@ img {
   border-color: transparent;
   cursor: pointer;
 }
-
-.form-button:hover,
-.form-button:focus {
+.form-button:hover, .form-button:focus {
   background-color: #188CE8;
 }
 

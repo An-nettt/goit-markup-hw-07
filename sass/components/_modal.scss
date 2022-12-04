@@ -55,7 +55,7 @@
 .button-close .button-icon {
     fill: #000000;
 
-    transition: fill var(--transition)
+    transition: fill var(--transition);
     .button-close:hover &,
     .button-close:focus & {
         fill: var(--accent-color);
@@ -180,17 +180,18 @@
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
     fill: transparent;
+    .policy-check:checked+& {
+        background-color: var(--accent-color);
+        border: none;
+        fill: var(--prymary-bgc)
+    }
+
+    .policy-check:focus+& {
+        border-color: var(--accent-color);
+    }
 }
 
-.policy-check:checked+.policy-label .policy-check {
-    background-color: var(--accent-color);
-    border: none;
-    fill: var(--prymary-bgc)
-}
 
-.policy-check:focus+.policy-label .policy-check {
-    border-color: var(--accent-color);
-}
 
 .policy-link {
     margin-left: 5px;
@@ -206,7 +207,7 @@
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-color: transparent;
-    cursor: pointer
+    cursor: pointer;
     &:hover,
     &:focus {
         background-color: #188CE8;

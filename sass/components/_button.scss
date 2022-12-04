@@ -15,20 +15,18 @@
     cursor: pointer
 }
 
-.button.primary {
+.button.primary {    
     transition: background-color var(--transition);
 
     padding: 10px 32px;
     min-width: 216px;
     border: transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
 }
-
-.button.primary:hover,
-.button.primary:focus {
-    background-color: #188CE8;
-}
-
 
 .button.secondary {
     transition: background-color var(--transition), color var(--transition), box-shadow var(--transition);
@@ -41,13 +39,13 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    cursor: pointer
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+        color: var(--hero-text);
+        background-color: var(--accent-color);
+    }
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
-    color: var(--hero-text);
-    background-color: var(--accent-color);
-}

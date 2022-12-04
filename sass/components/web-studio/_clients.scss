@@ -6,11 +6,13 @@
 
 .clients-item {
     flex-basis: calc((100% - 150px) / 6);
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
 }
 
-.clients-item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .clients-link {
     transition: border var(--transition);
@@ -23,20 +25,21 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     padding: 15px 31px;
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
 }
 
-.clients-link:hover,
-.clients-link:focus {
-    border: 1px solid var(--accent-color);
-}
+
 
 .clients-logo {
     transition: fill var(--transition);
 
     fill: currentColor;
+    .clients-link:hover &,
+    .clients-link:focus & {
+        fill: var(--accent-color);
+    }
 }
 
-.clients-link:hover .clients-logo,
-.clients-link:focus .clients-logo {
-    fill: var(--accent-color);
-}

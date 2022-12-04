@@ -47,15 +47,11 @@ header {
     line-height: 16px;
     letter-spacing: 0.02em;
     text-decoration: none;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--accent-color);
-}
-
-.site-nav .link.current {
-    color: var(--accent-color);
+    &:hover,
+    &:focus,
+    &.current {
+        color: var(--accent-color);
+    }    
 }
 
 .current-link {
@@ -100,6 +96,10 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .contacts .link .icon {
@@ -107,7 +107,3 @@ header {
     fill: currentColor;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
-    color: var(--accent-color);
-}

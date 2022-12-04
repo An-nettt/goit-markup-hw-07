@@ -56,11 +56,10 @@
     fill: #000000;
 
     transition: fill var(--transition)
-}
-
-.button-close:hover .button-icon,
-.button-close:focus .button-icon {
-    fill: var(--accent-color);
+    .button-close:hover &,
+    .button-close:focus & {
+        fill: var(--accent-color);
+    }
 }
 
 .modal-title {
@@ -75,14 +74,13 @@
 
 .modal-field {
     margin-bottom: 10px;
-}
+    &:nth-of-type(4n) {
+        margin-bottom: 20px;
+    }
 
-.modal-field:nth-of-type(4n) {
-    margin-bottom: 20px;
-}
-
-.modal-field:nth-of-type(5n) {
-    margin-bottom: 30px;
+    &:nth-of-type(5n) {
+        margin-bottom: 30px;
+    }
 }
 
 .form-label {
@@ -110,6 +108,9 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
+    &:focus {
+        border-color: var(--accent-color);
+    }
 }
 
 .form-input .placeholder {
@@ -117,10 +118,6 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-}
-
-.form-input:focus {
-    border-color: var(--accent-color);
 }
 
 .form-icon {
@@ -149,17 +146,15 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
-}
-
-.form-comment::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-}
-
-.form-comment:focus {
-    border-color: var(--accent-color);
+    &:focus {
+        border-color: var(--accent-color);
+    }
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
 .policy-label {
@@ -212,9 +207,9 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-color: transparent;
     cursor: pointer
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
 }
 
-.form-button:hover,
-.form-button:focus {
-    background-color: #188CE8;
-}

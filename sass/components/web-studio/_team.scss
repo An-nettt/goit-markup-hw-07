@@ -13,10 +13,9 @@
 
     flex-basis: calc((100% - 90px) / 4);
     background-color: var(--prymary-bgc);
-}
-
-.teams .item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .team-members {
@@ -64,20 +63,20 @@
     background-color: var(--prymary-bgc);
     color: #AFB1B8;
     border-radius: 50%;
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
 
 .team-item .soc-icon {
     transition: fill var(--transition);
 
     fill: currentColor;
+    .team-item .soc-link:hover &,
+    .team-item .soc-link:focus & {
+        fill: var(--hero-text);
+    }
 }
 
-.team-item .soc-link:hover,
-.team-item .soc-link:focus {
-    background-color: var(--accent-color);
-}
 
-.team-item .soc-link:hover .soc-icon,
-.team-item .soc-link:focus .soc-icon {
-    fill: var(--hero-text);
-}

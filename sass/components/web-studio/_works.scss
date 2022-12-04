@@ -9,10 +9,9 @@
 
 .work-list .item {
     flex-basis: calc((100% - 60px) / 3);
-}
-
-.work-list .item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .work {

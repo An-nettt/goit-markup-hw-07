@@ -9,8 +9,8 @@
 
 .filters .item {
     margin-right: 8px;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
-.filters .item:last-child {
-    margin-right: 0;
-}

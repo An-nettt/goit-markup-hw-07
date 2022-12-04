@@ -40,6 +40,10 @@
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .contacts-footer {
@@ -50,13 +54,10 @@
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
-}
-
-.address:hover,
-.address:focus,
-.contacts-footer:hover,
-.contacts-footer:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .join {
@@ -97,20 +98,18 @@
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--hero-text);
     border-radius: 50%;
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
 
 .join-item .soc-icon {
     fill: currentColor;
-}
-
-.join-item .soc-link:hover,
-.join-item .soc-link:focus {
-    background-color: var(--accent-color);
-}
-
-.join-item .soc-link:hover .soc-icon,
-.join-item .soc-link:focus .soc-icon {
-    fill: currentColor;
+    .join-item .soc-link:hover &,
+    .join-item .soc-link:focus & {
+        fill: currentColor;
+    }
 }
 
 .subscribe .title {
@@ -139,6 +138,10 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
 }
 
 .subscribe-input .placeholder {
@@ -146,11 +149,6 @@
     line-height: 1.25px;
 
     color: rgba(255, 255, 255, 0.6);
-}
-
-.subscribe-input:hover,
-.subscribe-input:focus {
-    border-color: var(--accent-color);
 }
 
 .subscribe-button {
@@ -163,6 +161,10 @@
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-color: transparent;
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
 }
 
 .subscribe-text {
@@ -173,7 +175,3 @@
     fill: var(--prymary-bgc);
 }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
-    background-color: #188CE8;
-}

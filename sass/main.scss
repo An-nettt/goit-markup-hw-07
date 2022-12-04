@@ -1,4 +1,4 @@
-@import './utils/vars';
+@import './utils/variables';
 @import './utils/visually-hidden';
 
 @import './base/reset';
@@ -9,15 +9,15 @@
 @import './components/section';
 @import './components/modal';
 
+@import './components/header';
+@import './components/hero';
+@import './components/footer';
 
-@import './layouts/header';
-@import './layouts/hero';
-@import './layouts/footer';
+@import './components/web-studio/features';
+@import './components/web-studio/works';
+@import './components/web-studio/team';
+@import './components/web-studio/clients';
 
-@import './layouts/web-studio/features';
-@import './layouts/web-studio/works';
-@import './layouts/web-studio/team';
-@import './layouts/web-studio/clients';
+@import './components/portfolio/filters';
+@import './components/portfolio/projects';
 
-@import './layouts/portfolio/filters';
-@import './layouts/portfolio/projects';

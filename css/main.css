@@ -52,7 +52,7 @@ ul {
 body {
   color: var(--prymary-text-color);
   background-color: var(--prymary-bgc);
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   letter-spacing: 0.03em;
 }
@@ -387,7 +387,7 @@ img {
 /* ----------------------------Лого--------------------------------- */
 .site-logo {
   margin-right: 93px;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   color: #000000;
   font-weight: 700;
   font-size: 26px;
@@ -397,7 +397,7 @@ img {
 
 .logo {
   color: var(--accent-color);
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 /* -----------------------Навігація по сайту------------------------ */
@@ -552,7 +552,7 @@ img {
   display: inline-block;
   margin-bottom: 20px;
   color: #FFFFFF;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;

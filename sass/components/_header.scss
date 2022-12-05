@@ -7,7 +7,7 @@
 .site-logo {
     margin-right: 93px;
 
-    font-family: 'Raleway', sans-serif;
+    font-family: $fontLogo;
     color: #000000;
     font-weight: 700;
     font-size: 26px;
@@ -17,7 +17,7 @@
 
 .logo {
     color: var(--accent-color);
-    font-family: 'Raleway', sans-serif;
+    font-family: $fontLogo;
 }
 
 /* -----------------------Навігація по сайту------------------------ */

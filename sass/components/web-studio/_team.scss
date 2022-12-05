@@ -54,15 +54,10 @@
 .team-link__soc-link {
     transition: background-color var(--transition);
 
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %soc-link;    
 
     background-color: var(--prymary-bgc);
-    color: #AFB1B8;
-    border-radius: 50%;
+    color: #AFB1B8;    
     &:hover,
     &:focus {
         background-color: var(--accent-color);

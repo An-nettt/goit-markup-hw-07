@@ -593,8 +593,8 @@ img {
   margin-right: auto;
 }
 
-.join .title,
-.subscribe .title {
+.join__title,
+.subscribe__title {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -603,7 +603,7 @@ img {
   color: var(--hero-text);
 }
 
-.join-link {
+.join__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -613,12 +613,12 @@ img {
   gap: 10px;
 }
 
-.join-item {
+.join__item {
   width: 44px;
   height: 44px;
 }
 
-.join-item .soc-link {
+.join__soc-link {
   -webkit-transition: background-color var(--transition), fill var(--transition);
   transition: background-color var(--transition), fill var(--transition);
   width: 100%;
@@ -636,33 +636,33 @@ img {
   color: var(--hero-text);
   border-radius: 50%;
 }
-.join-item .soc-link:hover, .join-item .soc-link:focus {
+.join__soc-link:hover, .join__soc-link:focus {
   background-color: var(--accent-color);
 }
 
-.join-item .soc-icon {
+.join__soc-icon {
   fill: currentColor;
 }
-.join-item .soc-link:hover .join-item .soc-icon, .join-item .soc-link:focus .join-item .soc-icon {
+.join-item .soc-link:hover .join__soc-icon, .join-item .soc-link:focus .join__soc-icon {
   fill: currentColor;
 }
 
-.subscribe .title {
+.subscribe__title {
   margin-bottom: 20px;
 }
 
-.subscribe-form {
+.subscribe__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.subscribe-label {
+.subscribe__label {
   margin-right: 12px;
   width: 358px;
 }
 
-.subscribe-input {
+.subscribe__input {
   -webkit-transition: border-color var(--transition);
   transition: border-color var(--transition);
   -webkit-box-sizing: border-box;
@@ -677,17 +677,17 @@ img {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-.subscribe-input:hover, .subscribe-input:focus {
+.subscribe__input:hover, .subscribe__input:focus {
   border-color: var(--accent-color);
 }
 
-.subscribe-input .placeholder {
+.subscribe__input .placeholder {
   font-size: 16px;
   line-height: 1.25px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-button {
+.subscribe__button {
   -webkit-transition: background-color var(--transition);
   transition: background-color var(--transition);
   display: -webkit-box;
@@ -700,15 +700,15 @@ img {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
 }
-.subscribe-button:hover, .subscribe-button:focus {
+.subscribe__button:hover, .subscribe__button:focus {
   background-color: #188CE8;
 }
 
-.subscribe-text {
+.subscribe__text {
   margin-right: 10px;
 }
 
-.subscribe-icon {
+.subscribe__icon {
   fill: var(--prymary-bgc);
 }
 

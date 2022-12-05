@@ -31,6 +31,21 @@
   overflow: hidden;
 }
 
+.team-link__soc-link, .join__soc-link {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -247,7 +262,7 @@ img {
   outline: transparent;
 }
 .form-input:focus {
-  border-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .form-input .placeholder {
@@ -284,7 +299,7 @@ img {
   outline: transparent;
 }
 .form-comment:focus {
-  border-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 .form-comment::-webkit-input-placeholder {
   font-size: 12px;
@@ -621,20 +636,8 @@ img {
 .join__soc-link {
   -webkit-transition: background-color var(--transition), fill var(--transition);
   transition: background-color var(--transition), fill var(--transition);
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--hero-text);
-  border-radius: 50%;
 }
 .join__soc-link:hover, .join__soc-link:focus {
   background-color: var(--accent-color);
@@ -678,7 +681,7 @@ img {
   border-radius: 4px;
 }
 .subscribe__input:hover, .subscribe__input:focus {
-  border-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .subscribe__input .placeholder {
@@ -858,20 +861,8 @@ img {
 .team-link__soc-link {
   -webkit-transition: background-color var(--transition);
   transition: background-color var(--transition);
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: var(--prymary-bgc);
   color: #AFB1B8;
-  border-radius: 50%;
 }
 .team-link__soc-link:hover, .team-link__soc-link:focus {
   background-color: var(--accent-color);

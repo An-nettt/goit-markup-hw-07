@@ -30,11 +30,11 @@
     display: flex;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.site-nav .link {
+.site-nav__link {
     transition: color var(--transition);
 
     display: block;
@@ -54,11 +54,11 @@
     }    
 }
 
-.current-link {
+.site-nav__current-link {
     position: relative;
 }
 
-.link.current::after {
+.site-nav__link--current::after {
     content: "";
     position: absolute;
     display: inline-block;
@@ -77,11 +77,11 @@
     margin-left: auto;
 }
 
-.contacts .item+.item {
+.contacts__item+.contacts__item {
     margin-left: 50px;
 }
 
-.contacts .link {
+.contacts__link {
     transition: color var(--transition);
 
     display: flex;
@@ -102,7 +102,7 @@
     }
 }
 
-.contacts .link .icon {
+.contacts__icon {
     margin-right: 10px;
     fill: currentColor;
 }
